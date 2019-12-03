@@ -13,6 +13,7 @@
 
 
     <RelativeLayout
+        android:background="@drawable/lobbystock"
         android:id="@+id/LoddyDesign"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
@@ -25,11 +26,13 @@
         <ImageView
             android:id="@+id/LImage"
             android:layout_width="match_parent"
-            android:layout_height="180dp"
+            android:layout_height="290dp"
             android:scaleType="centerCrop"
             android:src="@drawable/loby" />
 
         <RelativeLayout
+            android:id="@+id/LLone"
+            android:layout_marginTop="7dp"
             android:layout_below="@+id/LImage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -40,6 +43,177 @@
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                 <ImageView
+                     android:src="@drawable/wifi"
+                     android:layout_width="35dp"
+                     android:layout_height="35dp">
+
+                 </ImageView>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                 <ImageView
+                     android:src="@drawable/car"
+                     android:layout_width="35dp"
+                     android:layout_height="35dp">
+
+                 </ImageView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                 <ImageView
+                     android:src="@drawable/room"
+                     android:layout_width="35dp"
+                     android:layout_height="35dp">
+
+                 </ImageView>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                 <ImageView
+                     android:src="@drawable/services"
+                     android:layout_width="35dp"
+                     android:layout_height="35dp">
+
+                 </ImageView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                 <ImageView
+                     android:src="@drawable/locationservices"
+                     android:layout_width="35dp"
+                     android:layout_height="35dp">
+
+                 </ImageView>
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+        <RelativeLayout
+
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/LLone"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:weightSum="5"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                 <ImageView
+                     android:src="@drawable/spa"
+                     android:layout_width="35dp"
+                     android:layout_height="35dp">
+
+                 </ImageView>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                 <ImageView
+                     android:src="@drawable/swpool"
+                     android:layout_width="35dp"
+                     android:layout_height="35dp">
+
+                 </ImageView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                 <ImageView
+                     android:src="@drawable/fitness"
+                     android:layout_width="35dp"
+                     android:layout_height="35dp">
+
+                 </ImageView>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                 <ImageView
+                     android:src="@drawable/meeting"
+                     android:layout_width="35dp"
+                     android:layout_height="35dp">
+
+                 </ImageView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                 <ImageView
+                     android:src="@drawable/glass"
+                     android:layout_width="35dp"
+                     android:layout_height="35dp">
+
+                 </ImageView>
+                </LinearLayout>
+
+
 
 
 
@@ -53,510 +227,7 @@
 
 
 
-    <ScrollView
-        android:layout_below="@+id/LoddyDesign"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
 
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/front_sidecardID"
-                android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
-                android:elevation="5dp"
-                app:cardCornerRadius="7dp">
-
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/loby" />
-
-                    <TextView
-                        android:id="@+id/LobbyID"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:text="Lobby"
-                        android:textColor="#fff"
-                        android:textSize="25sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
-                        android:layout_alignParentBottom="true"
-                        android:layout_margin="8dp"
-                        android:text="click me more details"
-                        android:textColor="@android:color/white"
-                        android:textSize="15dp" />
-
-                </RelativeLayout>
-
-            </androidx.cardview.widget.CardView>
-
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/lobbycardID"
-                android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:layout_below="@id/front_sidecardID"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
-                android:elevation="5dp"
-                android:visibility="gone"
-                app:cardCornerRadius="7dp">
-
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/loby" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:layout_centerVertical="true"
-                        android:text="Front Side"
-                        android:textColor="#F76294"
-                        android:textSize="35sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
-                        android:layout_alignParentBottom="true"
-                        android:layout_margin="8dp"
-                        android:text="click me more details"
-                        android:textColor="@android:color/white"
-                        android:textSize="15dp" />
-
-                </RelativeLayout>
-
-            </androidx.cardview.widget.CardView>
-
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cornercaffecardID"
-                android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:layout_below="@id/lobbycardID"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
-                android:elevation="5dp"
-                app:cardCornerRadius="7dp">
-
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/cornercaffe" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:text="Corner Cafe"
-                        android:textColor="#fff"
-                        android:textSize="25sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
-                        android:layout_alignParentBottom="true"
-                        android:layout_margin="8dp"
-                        android:text="click me more details"
-                        android:textColor="@android:color/white"
-                        android:textSize="15dp" />
-
-                </RelativeLayout>
-
-            </androidx.cardview.widget.CardView>
-
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/oliviaresturentcardID"
-                android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:layout_below="@id/cornercaffecardID"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
-                android:elevation="5dp"
-                app:cardCornerRadius="7dp">
-
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/overes" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:text="OLIVIA Resturent"
-                        android:textColor="#fff"
-                        android:textSize="25sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
-                        android:layout_alignParentBottom="true"
-                        android:layout_margin="8dp"
-                        android:text="click me more details"
-                        android:textColor="@android:color/white"
-                        android:textSize="15dp" />
-
-                </RelativeLayout>
-
-            </androidx.cardview.widget.CardView>
-
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/MangrobarCardID"
-                android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:layout_below="@id/oliviaresturentcardID"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
-                android:elevation="5dp"
-                app:cardCornerRadius="7dp">
-
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/mango" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:text="Mango Bar"
-                        android:textColor="#fff"
-                        android:textSize="25sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
-                        android:layout_alignParentBottom="true"
-                        android:layout_margin="8dp"
-                        android:text="click me more details"
-                        android:textColor="@android:color/white"
-                        android:textSize="15dp" />
-
-                </RelativeLayout>
-
-            </androidx.cardview.widget.CardView>
-
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/HookanCardID"
-                android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:layout_below="@id/MangrobarCardID"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
-                android:elevation="5dp"
-                app:cardCornerRadius="7dp">
-
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/hukalang" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:text="Hookan Longu"
-                        android:textColor="#fff"
-                        android:textSize="25dp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
-                        android:layout_alignParentBottom="true"
-                        android:layout_margin="8dp"
-                        android:text="click me more details"
-                        android:textColor="@android:color/white"
-                        android:textSize="15dp" />
-
-                </RelativeLayout>
-
-            </androidx.cardview.widget.CardView>
-
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/SpaAndWelnessID"
-                android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:layout_below="@id/HookanCardID"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
-                android:elevation="5dp"
-                app:cardCornerRadius="7dp">
-
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/spawelness" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:text="SPA &amp; Wellness"
-                        android:textColor="#fff"
-                        android:textSize="25sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
-                        android:layout_alignParentBottom="true"
-                        android:layout_margin="8dp"
-                        android:text="click me more details"
-                        android:textColor="@android:color/white"
-                        android:textSize="15dp" />
-
-                </RelativeLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/FitnessCareID"
-                android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:layout_below="@id/SpaAndWelnessID"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
-                android:elevation="5dp"
-                app:cardCornerRadius="7dp">
-
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/fitnesscare" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:text="Fittness Center"
-                        android:textColor="#fff"
-                        android:textSize="25sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
-                        android:layout_alignParentBottom="true"
-                        android:layout_margin="8dp"
-                        android:text="click me more details"
-                        android:textColor="@android:color/white"
-                        android:textSize="15dp" />
-
-                </RelativeLayout>
-
-            </androidx.cardview.widget.CardView>
-
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/MangroveRoomID"
-                android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:layout_below="@id/FitnessCareID"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
-                android:elevation="5dp"
-                app:cardCornerRadius="7dp">
-
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/mangroveroom" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:text="Mangrove Room"
-                        android:textColor="#fff"
-                        android:textSize="25sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
-                        android:layout_alignParentBottom="true"
-                        android:layout_margin="8dp"
-                        android:text="click me more details"
-                        android:textColor="@android:color/white"
-                        android:textSize="15dp" />
-
-                </RelativeLayout>
-
-            </androidx.cardview.widget.CardView>
-
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/MeetingandevantID"
-                android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:layout_below="@id/MangroveRoomID"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
-                android:elevation="5dp"
-                app:cardCornerRadius="7dp">
-
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/meetingsandevant" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginBottom="10dp"
-                        android:text="Consective Lounge"
-                        android:textColor="#fff"
-                        android:textSize="25sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
-                        android:layout_alignParentBottom="true"
-                        android:layout_margin="8dp"
-                        android:text="click me more details"
-                        android:textColor="@android:color/white"
-                        android:textSize="15dp" />
-
-                </RelativeLayout>
-
-            </androidx.cardview.widget.CardView>
-
-
-        </RelativeLayout>
-
-
-    </ScrollView>
 
 </RelativeLayout>
 

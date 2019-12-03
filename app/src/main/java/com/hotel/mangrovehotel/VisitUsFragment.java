@@ -31,15 +31,8 @@ public class VisitUsFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_visit_us, container, false);
 
 
-        lobby = view.findViewById(R.id.LobbyID);
-        lobby.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), LobbyActivity.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
-            }
-        });
+
+
 
         return view;
     }
