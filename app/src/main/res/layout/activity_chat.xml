@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/message_background"
+        android:scaleType="centerCrop">
+
+    </ImageView>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/ChatToolbarID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="@android:color/white">
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:id="@+id/MidialID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ButtonLayoutID"
+        android:layout_below="@id/ChatToolbarID">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/MessageViewID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ButtonLayoutID"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="60dp"
+            android:elevation="3dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp">
+
+            <EditText
+                android:id="@+id/InputMessageID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#fff"
+                android:hint="Enter Message"
+                android:singleLine="true">
+
+            </EditText>
+
+        </androidx.cardview.widget.CardView>
+
+        <ImageButton
+            android:id="@+id/SendButtonID"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/send_message_background"
+            android:elevation="3dp"
+            android:src="@drawable/send_image">
+
+        </ImageButton>
+
+    </RelativeLayout>
+
+</RelativeLayout>
