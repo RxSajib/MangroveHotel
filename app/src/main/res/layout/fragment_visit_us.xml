@@ -6,8 +6,55 @@
     android:layout_height="match_parent"
     tools:context=".VisitUsFragment">
 
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:id="@+id/LoddyDesign"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/LImage"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/loby" />
+
+        <RelativeLayout
+            android:layout_below="@+id/LImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:weightSum="5"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
 
     <ScrollView
+        android:layout_below="@+id/LoddyDesign"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -510,5 +557,7 @@
 
 
     </ScrollView>
+
+</RelativeLayout>
 
 </FrameLayout>
