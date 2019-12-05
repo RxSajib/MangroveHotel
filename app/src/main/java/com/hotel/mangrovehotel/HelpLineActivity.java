@@ -8,11 +8,14 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class HelpLineActivity extends AppCompatActivity {
@@ -20,6 +23,7 @@ public class HelpLineActivity extends AppCompatActivity {
     private Button button;
     private ImageView facebook, tweeter, googleplus, instragram;
     private Toolbar toolbar;
+    private TextView adminbutton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +34,16 @@ public class HelpLineActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.back_icon);
-        getSupportActionBar().setTitle("Contacts Us");
+        adminbutton = findViewById(R.id.ContactsUsButtonID);
+
+        adminbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Admin_LoginActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+            }
+        });
 
 
         facebook = findViewById(R.id.FacebookButtonID);
@@ -78,6 +91,8 @@ public class HelpLineActivity extends AppCompatActivity {
             }
         });
     }
+
+
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {

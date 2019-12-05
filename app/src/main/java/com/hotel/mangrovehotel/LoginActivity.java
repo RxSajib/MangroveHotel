@@ -46,9 +46,9 @@ public class LoginActivity extends AppCompatActivity {
         Mprogress = new ProgressDialog(LoginActivity.this);
         Mauth = FirebaseAuth.getInstance();
         if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.M) {
-            getWindow().clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+            getWindow().clearFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
         } else {
-            getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+            getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
         }
 
         google = findViewById(R.id.GoogleSiginID);
