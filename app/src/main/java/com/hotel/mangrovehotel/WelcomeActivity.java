@@ -6,13 +6,27 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.TextView;
 
 public class WelcomeActivity extends AppCompatActivity {
+
+    private TextView welcometext;
+    private TextView welcomedetails;
+    private Animation animation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.welcome_activity);
+
+        animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.frombutton);
+        welcometext = findViewById(R.id.WelcomeTextID);
+        welcomedetails = findViewById(R.id.WelcomeTextDetails);
+
+        welcometext.setAnimation(animation);
+        welcomedetails.setAnimation(animation);
 
 
         if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.M) {

@@ -20,11 +20,7 @@
         android:icon="@drawable/beastdeals"
         ></item>
 
-    <item
-        android:id="@+id/MessageID"
-        android:icon="@drawable/message"
-        android:title="Message"
-        ></item>
+
 
     <item
         android:id="@+id/MangroveCashID"

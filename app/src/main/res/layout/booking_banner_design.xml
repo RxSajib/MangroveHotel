@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/Top"
+        android:layout_width="match_parent"
+        android:background="#DB0000"
+        android:layout_height="30dp">
+
+        <TextView
+            android:id="@+id/CouponTextID"
+            android:textColor="@android:color/white"
+            android:textSize="17dp"
+            android:text="Exclusive Coupon"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/OvalID"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/subcriber_stoke"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/CouponTextID"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_toRightOf="@id/OvalID"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="13dp"
+            android:text="For subscribers only"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/AA"
+        android:layout_below="@id/Top"
+        android:background="@drawable/booking_fromdesign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/MidleIDd"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:weightSum="3">
+
+
+
+
+
+            <RelativeLayout
+                android:layout_weight="2"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:textSize="27dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Enjoy your 10% off your stay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    />
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:src="@drawable/discountone"
+                    android:layout_height="match_parent">
+
+
+                </ImageView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/MidleIDd"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="100dp">
+
+
+            <TextView
+                android:id="@+id/CodeTextt"
+                android:textSize="16dp"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:text="Enter your code on the Booking Form"
+                />
+
+            <LinearLayout
+                android:layout_below="@+id/CodeTextt"
+                android:id="@+id/LL"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:weightSum="4"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:layout_weight="2.5"
+                    android:layout_width="0dp"
+                    android:hint="AHMED10"
+                    android:singleLine="true"
+                    android:background="@drawable/book_nowedittext_design"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:layout_marginRight="10dp"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content">
+
+                </EditText>
+
+                <Button
+                    android:layout_weight="1.2"
+                    android:background="@drawable/book_buttondesign"
+                    android:text="Book now"
+                    android:textColor="@android:color/white"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="wrap_content">
+
+                </Button>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/Fuck"
+        android:layout_below="@+id/AA"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:background="#DB0000"
+        android:layout_height="30dp">
+
+        <TextView
+            android:id="@+id/CouponTextIDs"
+            android:textColor="@android:color/white"
+            android:textSize="17dp"
+            android:text="Exclusive Coupon"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/OvalIDaa"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/subcriber_stoke"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/CouponTextIDs"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_toRightOf="@id/OvalIDaa"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="13dp"
+            android:text="For subscribers only"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Fucktwo"
+        android:layout_below="@id/Fuck"
+        android:background="@drawable/booking_fromdesign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/MidleID"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:weightSum="3">
+
+
+            <RelativeLayout
+                android:layout_weight="2"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:textSize="22dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Earn Cashback \nGet 50AED Reward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    />
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:src="@drawable/coion"
+                    android:layout_height="match_parent">
+
+
+                </ImageView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/MidleID"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="100dp">
+
+
+            <TextView
+                android:id="@+id/CodeTexts"
+                android:textSize="16dp"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:text="Enter your code on the Booking Form"
+                />
+
+            <LinearLayout
+                android:layout_below="@+id/CodeTexts"
+                android:id="@+id/LL"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:weightSum="4"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:layout_weight="2.5"
+                    android:layout_width="0dp"
+                    android:hint="AHMED-50AED"
+                    android:singleLine="true"
+                    android:background="@drawable/book_nowedittext_design"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:layout_marginRight="10dp"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content">
+
+                </EditText>
+
+                <Button
+                    android:layout_weight="1.2"
+                    android:background="@drawable/book_buttondesign"
+                    android:text="Book now"
+                    android:textColor="@android:color/white"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="wrap_content">
+
+                </Button>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/DDDD"
+        android:layout_below="@+id/Fucktwo"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:background="#DB0000"
+        android:layout_height="30dp">
+
+        <TextView
+            android:id="@+id/CouponTextIDa"
+            android:textColor="@android:color/white"
+            android:textSize="17dp"
+            android:text="Exclusive Coupon"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/OvalIDa"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/subcriber_stoke"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/CouponTextIDa"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_toRightOf="@id/OvalIDa"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="13dp"
+            android:text="For subscribers only"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/FuckThree"
+        android:layout_below="@id/DDDD"
+        android:background="@drawable/booking_fromdesign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/MidleIDs"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:weightSum="3">
+
+
+            <RelativeLayout
+                android:layout_weight="2"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:textSize="22dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Collect 9 Nights Get \nA Reward Night"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    />
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:src="@drawable/sunnicon"
+                    android:layout_height="match_parent">
+
+
+                </ImageView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/MidleIDs"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="100dp">
+
+
+            <TextView
+                android:id="@+id/CodeText"
+                android:textSize="16dp"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:text="Enter your code on the Booking Form"
+                />
+
+            <LinearLayout
+                android:layout_below="@+id/CodeText"
+                android:id="@+id/LL"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:weightSum="4"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:layout_weight="2.5"
+                    android:layout_width="0dp"
+                    android:hint="FREENIGHT"
+                    android:singleLine="true"
+                    android:background="@drawable/book_nowedittext_design"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:layout_marginRight="10dp"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content">
+
+                </EditText>
+
+                <Button
+                    android:layout_weight="1.2"
+                    android:background="@drawable/book_buttondesign"
+                    android:text="Book now"
+                    android:textColor="@android:color/white"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="wrap_content">
+
+                </Button>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

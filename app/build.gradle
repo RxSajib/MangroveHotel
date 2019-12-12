@@ -36,13 +36,13 @@ dependencies {
 
     //   implementation 'com.google.firebase:firebase-analytics:17.2.0'
     //noinspection GradleCompatible
-  //  implementation 'com.google.firebase:firebase-database:12.0.1'
-   // implementation 'com.firebaseui:firebase-ui-database:1.1.1'
-   // implementation 'com.google.firebase:firebase-auth:12.0.1'
-   // implementation 'com.github.sujithkanna:smileyrating:1.6.8'
-   // api 'com.theartofdev.edmodo:android-image-cropper:2.5.1'
-  //  implementation 'com.google.firebase:firebase-firestore:12.0.1'
-  //  implementation 'com.google.firebase:firebase-storage:12.0.1'
+    //  implementation 'com.google.firebase:firebase-database:12.0.1'
+    // implementation 'com.firebaseui:firebase-ui-database:1.1.1'
+    // implementation 'com.google.firebase:firebase-auth:12.0.1'
+    // implementation 'com.github.sujithkanna:smileyrating:1.6.8'
+    // api 'com.theartofdev.edmodo:android-image-cropper:2.5.1'
+    //  implementation 'com.google.firebase:firebase-firestore:12.0.1'
+    //  implementation 'com.google.firebase:firebase-storage:12.0.1'
 
 
     implementation 'androidx.annotation:annotation:1.1.0'
@@ -70,6 +70,10 @@ dependencies {
     implementation 'com.github.sujithkanna:smileyrating:1.6.8'
 
 
+    implementation 'com.google.android.gms:play-services-auth:12.0.1'
+
+    implementation 'com.google.firebase:firebase-auth:12.0.1'
+    implementation 'com.google.android.gms:play-services-auth:12.0.1'
 
 }
 apply plugin: 'com.google.gms.google-services'

@@ -33,9 +33,9 @@ public class Regastation_Activity extends AppCompatActivity {
         setContentView(R.layout.activity_regastation_);
 
         if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.M) {
-            getWindow().clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+            getWindow().clearFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
         } else {
-            getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+            getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
         }
 
         Mprogress = new ProgressDialog(Regastation_Activity.this);

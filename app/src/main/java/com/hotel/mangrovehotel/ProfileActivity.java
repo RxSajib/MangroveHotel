@@ -9,7 +9,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -29,6 +31,7 @@ public class ProfileActivity extends AppCompatActivity {
     private String CurrentUserID;
     private DatabaseReference Muserdatabase;
     private ProgressDialog Mprogress;
+    private ImageView imageView;
 
 
     @Override
@@ -46,13 +49,16 @@ public class ProfileActivity extends AppCompatActivity {
         username = findViewById(R.id.UsernameEdittextID);
         phonenumber = findViewById(R.id.PhoneNumberEdittextID);
         button = findViewById(R.id.SetupButtonID);
+        imageView = findViewById(R.id.imagee);
+
+
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                String usernametxet = username.getText().toString();
-                String phonenumbertext = phonenumber.getText().toString();
+                String usernametxet = username.getText().toString().trim().toUpperCase();
+                String phonenumbertext = phonenumber.getText().toString().trim();
 
                 if (usernametxet.isEmpty()) {
                     username.setError("Username Require");

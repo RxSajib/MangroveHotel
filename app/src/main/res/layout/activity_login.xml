@@ -26,6 +26,7 @@
     </RelativeLayout>
 
     <LinearLayout
+        android:id="@+id/FastID"
         android:layout_width="match_parent"
         android:layout_marginTop="15dp"
         android:layout_height="wrap_content"
@@ -34,11 +35,12 @@
 
 
         <Button
+            android:id="@+id/SS"
             android:background="@drawable/offer_buttondesign"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:text="10% Off"
+            android:text="Discount &amp; Offer"
             android:textColor="@android:color/white"
             android:layout_marginRight="10dp"
             android:layout_weight="1">
@@ -47,6 +49,7 @@
 
 
         <Button
+            android:id="@+id/BookNOwButtonID"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@drawable/bookbutton_design"
@@ -60,6 +63,21 @@
 
     </LinearLayout>
 
+
+    <TextView
+        android:id="@+id/TextViewID"
+        android:layout_below="@+id/FastID"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
 
     <RelativeLayout
         android:id="@+id/onet"
@@ -185,6 +203,7 @@
 
 
             <RelativeLayout
+                android:id="@+id/InstregramLoginID"
                 android:layout_width="45dp"
                 android:layout_height="45dp"
                 android:layout_centerVertical="true"
@@ -197,11 +216,12 @@
                     android:id="@+id/GoogleSiginID"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/googleplus" />
+                    android:src="@drawable/instagramlogo" />
 
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/GmailButtonID"
                 android:layout_width="45dp"
                 android:layout_height="45dp"
                 android:layout_centerHorizontal="true"
@@ -214,8 +234,7 @@
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/tw" />
-
+                    android:src="@drawable/gmailiconicon" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -237,6 +256,9 @@
 
 
         </RelativeLayout>
+
+
+
 
 
     </RelativeLayout>
