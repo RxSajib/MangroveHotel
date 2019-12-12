@@ -1,9 +1,8 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Mangrove Hotel</string>
 
 
-    <string name="facebook_app_id">436272087296356</string>
-    <string name="fb_login_protocol_scheme">fb436272087296356</string>
+
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -149,6 +148,12 @@ Towels/Sheets (extra fee)\n
 Towels\n
 Linen\n
 Upper floors accessible by elevator\n</string>
+
+
+
+
+    <string name="facebook_app_id">3171930472821848</string>
+    <string name="fb_login_protocol_scheme">fb3171930472821848</string>
 
 
 </resources>

@@ -11,9 +11,9 @@
     <RelativeLayout
         android:id="@+id/HeaderLayoutID"
         android:layout_width="120dp"
-        android:layout_marginTop="25dp"
         android:layout_height="120dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
         android:background="@drawable/stoke"
         android:gravity="center">
 
@@ -28,22 +28,22 @@
     <LinearLayout
         android:id="@+id/FastID"
         android:layout_width="match_parent"
-        android:layout_marginTop="15dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/HeaderLayoutID"
+        android:layout_marginTop="15dp"
         android:weightSum="2">
 
 
         <Button
             android:id="@+id/SS"
-            android:background="@drawable/offer_buttondesign"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:text="Discount &amp; Offer"
-            android:textColor="@android:color/white"
             android:layout_marginRight="10dp"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:background="@drawable/offer_buttondesign"
+            android:text="Discount &amp; Offer"
+            android:textColor="@android:color/white">
 
         </Button>
 
@@ -52,12 +52,12 @@
             android:id="@+id/BookNOwButtonID"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/bookbutton_design"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:textColor="@android:color/white"
+            android:layout_weight="1"
+            android:background="@drawable/bookbutton_design"
             android:text="Book Now"
-            android:layout_weight="1">
+            android:textColor="@android:color/white">
 
         </Button>
 
@@ -66,18 +66,17 @@
 
     <TextView
         android:id="@+id/TextViewID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/FastID"
-        android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
-        android:visibility="gone"
-        android:textStyle="bold"
         android:textColor="@android:color/white"
         android:textSize="16dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-    </TextView>
+        android:textStyle="bold"
+        android:visibility="gone"></TextView>
 
     <RelativeLayout
         android:id="@+id/onet"
@@ -193,72 +192,80 @@
 
         </RelativeLayout>
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="120dp"
             android:layout_below="@+id/one"
             android:layout_marginLeft="25dp"
             android:layout_marginRight="25dp"
-            android:layout_marginBottom="10dp">
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical"
+            android:weightSum="2">
 
 
-            <RelativeLayout
-                android:id="@+id/InstregramLoginID"
-                android:layout_width="45dp"
-                android:layout_height="45dp"
-                android:layout_centerVertical="true"
-                android:layout_marginStart="50dp"
-                android:background="@drawable/button_stoke"
-                android:gravity="center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:weightSum="2">
 
 
-                <ImageView
+
+                <com.google.android.gms.common.SignInButton
                     android:id="@+id/GoogleSiginID"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/instagramlogo" />
+                    android:layout_width="0dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
 
-            </RelativeLayout>
+                </com.google.android.gms.common.SignInButton>\
 
-            <RelativeLayout
-                android:id="@+id/GmailButtonID"
-                android:layout_width="45dp"
-                android:layout_height="45dp"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="50dp"
-                android:background="@drawable/button_stoke"
-                android:gravity="center">
+                <com.facebook.login.widget.LoginButton
+                    android:id="@+id/login_button"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="3dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/LOfferID"
+                    android:background="@drawable/offer_design"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:text="Offer"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/HelpLineID"
+                    android:background="@drawable/help_linedesign"
+                    android:layout_width="0dp"
+                    android:textColor="@android:color/white"
+                    android:text="Help Line"
+                    android:layout_marginLeft="3dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                </Button>
+
+            </LinearLayout>
 
 
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/gmailiconicon" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="45dp"
-                android:layout_height="45dp"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="50dp"
-                android:background="@drawable/button_stoke"
-                android:gravity="center">
-
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/facebookicon" />
-
-            </RelativeLayout>
-
-
-        </RelativeLayout>
-
-
-
+        </LinearLayout>
 
 
     </RelativeLayout>
